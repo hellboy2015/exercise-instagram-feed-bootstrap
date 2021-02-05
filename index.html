@@ -9,251 +9,363 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Potta+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div>
+        <!--Nav Bar-->
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light">
+                <div class="ms-2">
                     <i class="fab fa-instagram m-1"></i>
                     <a class="navbar-brand" href="#" style="font-family: 'Lobster', cursive; color: gray;">Instagram</a>
                 </div>
-                <div class="" id="navbarSupportedContent ms-auto">
+                <div class="ms-auto me-2" id="navbarSupportedContent">
                     <form class="form-inline my-2 my-lg-0">
-                        <button class="btn btn-success my-2 my-sm-0" type="submit">Create a new post</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success my-2 my-sm-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
                     </form>
                 </div>
-                <div class="dropdown ms-auto me-2">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dropdown-->
+                <div class="dropdown me-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-cogs"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <li><button class="dropdown-item" type="button">Action</button></li>
-                      <li><button class="dropdown-item" type="button">Another action</button></li>
-                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
                     </ul>
-                  </div>
-            </nav>
-            <ul class="nav nav-secondary nav-pills justify-content-center" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="home" href="#home" aria-selected="true"><i class="fas fa-th"></i></a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link nav-link-secondary" id="profile-tab" data-bs-toggle="tab" role="tab" href="#profile" aria-controls="profile" aria-selected="false"><i class="fas fa-square"></i></a>
-                </li>
-              </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row p-2">
-                        <div class="col"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS5zZQMngET85IGs1I3rHZ5wjO0C0AbEgSw&usqp=CAU">
-                        </div>
-                        <div class="col"><img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIp53CNN7qHjcdUK48wx9MX8scrt1P5hgBQ&usqp=CAU">
-                        </div>
-                        <div class="col"><img
-                                src="http://narceaeduplastica.weebly.com/uploads/8/9/2/8/8928253/7536055.jpg?256">
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <div class="col"> <img
-                                src="https://pbs.twimg.com/profile_images/3637200309/487dccb3540aa9d20c70a9315c8ec656.jpeg">
-                        </div>
-                        <div class="col"><img
-                                src="https://marbal.files.wordpress.com/2011/10/las-mejores-imagenes-de-goku-92.png?w=256">
-                        </div>
-                        <div class="col"><img src="http://i.stack.imgur.com/ukC2U.jpg">
-                        </div>
-                    </div>
-                    <div class="row p-2">
-                        <div class="col"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZrAEtPUbnerKQuUq7K9KlFaoSdAco8iK2A&usqp=CAU">
-                        </div>
-                        <div class="col"><img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrYz4wvYPg3CorXWDYiSw9IJfh4PrFmqEIg&usqp=CAU">
-                        </div>
-                        <div class="col"><img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37Mg_B4s7D-Ylicl1yx8ZtiNL8hqa8iu42w&usqp=CAU">
-                        </div>
-                    </div>
                 </div>
-                <div class="tab-pane fade justify-content-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row col-3 justify-content-center w-50">
-                            <!--Start Post-->
-                            <div class="card text-center mx-auto w-50 border-0">
-                                <div class="card-header bg-white border-0">
-                                    <div class="row">
-                                        <span class="col-10">
-                                        My first photo
-                                    </span>
-                                    <span class="col-2">
-                                        12/14
-                                    </span>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                                <div class="card-footer text-left text-muted border-0 text-left">
-                                    2 days ago
-                                    <br>
-                                    This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS5zZQMngET85IGs1I3rHZ5wjO0C0AbEgSw&usqp=CAU"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIp53CNN7qHjcdUK48wx9MX8scrt1P5hgBQ&usqp=CAU"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="http://narceaeduplastica.weebly.com/uploads/8/9/2/8/8928253/7536055.jpg?256"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://pbs.twimg.com/profile_images/3637200309/487dccb3540aa9d20c70a9315c8ec656.jpeg"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://marbal.files.wordpress.com/2011/10/las-mejores-imagenes-de-goku-92.png?w=256"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="http://i.stack.imgur.com/ukC2U.jpg"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZrAEtPUbnerKQuUq7K9KlFaoSdAco8iK2A&usqp=CAU"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrYz4wvYPg3CorXWDYiSw9IJfh4PrFmqEIg&usqp=CAU"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                            <!--Start Post-->
-                            <div class="post">
-                                <div class="postHeader">
-                                    <h2>My first photo</h2>
-                                    <span>12/14</span>
-                                </div>
-                                <div class="postBody">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37Mg_B4s7D-Ylicl1yx8ZtiNL8hqa8iu42w&usqp=CAU"/>
-                                </div>
-                                <div class="postFooter">
-                                    <p>
-                                        This is my first photo of the feed. This is a multi line comment for testing purposes. I'm learning to code with <strong>#BreatheCode</strong>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End of post-->
-                        </div>
+            </nav>
+        </div>
+        <!--Pills-->
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" role="tab" aria-controls="home"
+                        href="#home" aria-selected="true"><i class="fas fa-th"></i></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-secondary" id="profile-tab" data-bs-toggle="tab" role="tab"
+                        href="#profile" aria-controls="profile" aria-selected="false"><i class="fas fa-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!--Pills-->
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="row p-2">
+                    <div class="col"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS5zZQMngET85IGs1I3rHZ5wjO0C0AbEgSw&usqp=CAU">
+                    </div>
+                    <div class="col"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIp53CNN7qHjcdUK48wx9MX8scrt1P5hgBQ&usqp=CAU">
+                    </div>
+                    <div class="col"><img
+                            src="http://narceaeduplastica.weebly.com/uploads/8/9/2/8/8928253/7536055.jpg?256"></div>
+                </div>
+
+                <div class="row p-2">
+                    <div class="col"> <img
+                            src="https://pbs.twimg.com/profile_images/3637200309/487dccb3540aa9d20c70a9315c8ec656.jpeg">
+                    </div>
+                    <div class="col"> <img
+                            src="https://marbal.files.wordpress.com/2011/10/las-mejores-imagenes-de-goku-92.png?w=256">
+                    </div>
+                    <div class="col"><img src="http://i.stack.imgur.com/ukC2U.jpg"></div>
+                </div>
+
+                <div class="row p-2">
+                    <div class="col"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZrAEtPUbnerKQuUq7K9KlFaoSdAco8iK2A&usqp=CAU">
+                    </div>
+                    <div class="col"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrYz4wvYPg3CorXWDYiSw9IJfh4PrFmqEIg&usqp=CAU">
+                    </div>
+                    <div class="col"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37Mg_B4s7D-Ylicl1yx8ZtiNL8hqa8iu42w&usqp=CAU">
+                    </div>
                 </div>
             </div>
+
+            <div class="tab-pane fade justify-content-center" id="profile" role="tabpanel"
+                aria-labelledby="profile-tab">
+                <div class="justify-content-center">
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS5zZQMngET85IGs1I3rHZ5wjO0C0AbEgSw&usqp=CAU" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMIp53CNN7qHjcdUK48wx9MX8scrt1P5hgBQ&usqp=CAU" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="http://narceaeduplastica.weebly.com/uploads/8/9/2/8/8928253/7536055.jpg?256" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://pbs.twimg.com/profile_images/3637200309/487dccb3540aa9d20c70a9315c8ec656.jpeg" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://marbal.files.wordpress.com/2011/10/las-mejores-imagenes-de-goku-92.png?w=256" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="http://i.stack.imgur.com/ukC2U.jpg" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZrAEtPUbnerKQuUq7K9KlFaoSdAco8iK2A&usqp=CAU" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrYz4wvYPg3CorXWDYiSw9IJfh4PrFmqEIg&usqp=CAU" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                    <!--Start Post-->
+                    <div class="card text-center mx-auto w-50 border-0 my-3">
+                        <div class="card-header bg-white border-0">
+                            <div class="row">
+                                <span class="col-10 text-start fs-5 fw-bold">
+                                    My first photo
+                                </span>
+                                <span class="col-2 text-secondary">
+                                    12/14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37Mg_B4s7D-Ylicl1yx8ZtiNL8hqa8iu42w&usqp=CAU" />
+                        </div>
+                        <div class="card-footer text-start text-muted border-0 bg-white">
+                            <span class="fw-bold text-body">2 days ago</span>
+                            <br>
+                            <span class="text-body">
+                                This is my first photo of the feed. This is a multi line comment for testing purposes.
+                                I'm
+                                learning to code with <strong>#BreatheCode</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End of post-->
+                </div>
+            </div>
+        </div>
     </div>
 
 
